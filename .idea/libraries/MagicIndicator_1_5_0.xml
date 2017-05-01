@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="MagicIndicator-1.5.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Android SDK/.android/build-cache/f9cba182591b4b3a0a21408d775bb7c771e5cccb/output/res" />
+      <root url="jar://$PROJECT_DIR$/../../Android SDK/.android/build-cache/f9cba182591b4b3a0a21408d775bb7c771e5cccb/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

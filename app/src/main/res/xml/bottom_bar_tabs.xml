@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_news"
+        icon="@drawable/news"
+        title="新闻"
+        barColorWhenSelected="#fff" />
+    <tab
+        id="@+id/tab_pic"
+        icon="@drawable/image"
+        title="图片"
+        barColorWhenSelected="#fff" />
+    <tab
+        id="@+id/tab_video"
+        icon="@drawable/video"
+        title="视频"
+        barColorWhenSelected="#fff" />
+    <tab
+        id="@+id/tab_today"
+        icon="@drawable/today"
+        title="今日"
+        barColorWhenSelected="#fff" />
+    <tab
+        id="@+id/tab_personal"
+        icon="@drawable/personal"
+        title="个人中心"
+        barColorWhenSelected="#fff" />
+
+</tabs>
