@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
 
-        //手机软键盘使用屏幕
+        //手机软键盘适应屏幕
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         setContentView(R.layout.activity_main);

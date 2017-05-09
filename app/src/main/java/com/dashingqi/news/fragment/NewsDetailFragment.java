@@ -49,7 +49,6 @@ import io.reactivex.schedulers.Schedulers;
 
     public NewsDetailFragment(String type){
         this.type=type;
-
     }
 
     @Nullable
@@ -105,8 +104,15 @@ import io.reactivex.schedulers.Schedulers;
     }
 
     @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        fetchData();
+    }
+
+    @Override
     public void fetchData() {
         updateData();
+      //  System.out.println("fetchData方法执行了");
 
     }
     /**
