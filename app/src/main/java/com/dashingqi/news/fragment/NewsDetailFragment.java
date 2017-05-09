@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -33,7 +34,7 @@ import io.reactivex.schedulers.Schedulers;
  * Created by zhangqi on 2017/4/21.
  */
 
-@SuppressLint("ValidFragment") public class NewsDetailFragment extends BaseFragment {
+@SuppressLint("ValidFragment") public class NewsDetailFragment extends Fragment {
 
     public String type;//新闻类型
     private List<NewsDataBean.ResultBean.DataBean> dataBeanList;
@@ -103,18 +104,19 @@ import io.reactivex.schedulers.Schedulers;
         return view;
     }
 
+    //TODO 没有执行父类的该方法 重写子类的  调用加载数据
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        fetchData();
-    }
-
-    @Override
-    public void fetchData() {
         updateData();
-      //  System.out.println("fetchData方法执行了");
-
     }
+
+//    @Override
+//    public void fetchData() {
+//        updateData();
+//      //  System.out.println("fetchData方法执行了");
+//
+//    }
     /**
      * 更新数据 取数据
      */
